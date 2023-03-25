@@ -19,7 +19,7 @@ const Edit = () => {
 
   useEffect(()=>{
     const Getuser = async ()=>{
-      const apiUrl = `http://localhost:5000/edit/${ id}`;
+      const apiUrl = `${process.env.REACT_APP_API_URL}/edit/${ id}`;
       await fetch(apiUrl, {
         method: "GET",
         headers: {
@@ -34,7 +34,7 @@ const Edit = () => {
 
   const UpdateData = async (e) => {
     e.preventDefault();
-    const apiUrl = `http://localhost:5000/update/${id}`;
+    const apiUrl = `${process.env.REACT_APP_API_URL}/${id}`;
     const {name, phone, email, hobbies} = userData;
     
     try {
@@ -50,17 +50,13 @@ const Edit = () => {
       });
       
       if (response.ok) {
-        // Show a success message or notification to the user
         console.log("Task updated successfully");
         
-        // Redirect to task list page
         navigate('/List');
       } else {
-        // Show an error message or notification to the user
         console.log("There was an error updating the task");
       }
     } catch (error) {
-      // Show an error message or notification to the user
       console.error(error);
       console.log("There was an error updating the task", error);
     }

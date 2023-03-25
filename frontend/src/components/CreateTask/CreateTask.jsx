@@ -21,7 +21,7 @@ const CreateTask = () => {
   const PostData = async (e) => {
     e.preventDefault();
     const { name, phone, email, hobbies } = backend;
-    const apiUrl = "http://localhost:5000/api/createtask";
+    const apiUrl = `${process.env.REACT_APP_API_URL}/api/createtask`;
     const res = await fetch(apiUrl, {
       method: "POST",
       headers: {

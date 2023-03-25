@@ -16,7 +16,7 @@ const CreateTaskList = () => {
 
 
   function GetList() {
-    const apiUrl = "http://localhost:5000/api/tasklist";
+    const apiUrl = `${process.env.REACT_APP_API_URL}/api/tasklist`;
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => setData(data))
@@ -25,7 +25,7 @@ const CreateTaskList = () => {
 
   const PostData = async (e, itemId) => {
     e.preventDefault();
-    const apiUrl = `http://localhost:5000/delete/${itemId}`;
+    const apiUrl = `${process.env.REACT_APP_API_URL}/delete/${itemId}`;
     await fetch(apiUrl, {
       method: "DELETE"
     }).then(() => {
