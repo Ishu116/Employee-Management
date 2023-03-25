@@ -3,14 +3,14 @@
 Intern assignment
 ---
 
-#git clone
+#git clone<br>
 
-#For frontEnd
-#cd frontend
-#npm install
-#npm start
+#For frontEnd<br>
+#cd frontend<br>
+#npm install<br>
+#npm start<br>
 
-#for backend
-#cd backend
-#npm install 
-#node index.js
+#for backend<br>
+#cd backend<br>
+#npm install<br> 
+#node index.js<br>
