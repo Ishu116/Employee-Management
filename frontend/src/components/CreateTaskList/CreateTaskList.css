@@ -1,0 +1,105 @@
+.List {
+    width: 80%;
+    margin: 5% auto;
+    gap: 4rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.container--items {
+    border: 1px solid black;
+}
+
+
+.button--List {
+    background: transparent;
+    border: none;
+}
+
+.table-head:hover {
+    background: transparent;
+}
+
+.button--List:hover {
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: rgb(142, 222, 142);
+}
+
+.list-table {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #DDD;
+}
+
+.send-main-btn {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 85%;
+    margin-top: 5%;
+}
+
+.send-mail {
+    position: absolute;
+    background: transparent;
+    color: white;
+    width: 10%;
+    right: 0;
+
+}
+
+.send-mail:hover {
+    cursor: pointer;
+}
+
+.send-main-btn-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+    width: 85%;
+}
+
+.update-link {
+    text-decoration: none;
+    color: black;
+}
+
+.add--data {
+    position: absolute;
+    width: 10%;
+    margin: 0;
+    padding-right: 4%;
+    border: none;
+}
+
+.add--data:hover{
+    background: none;
+    color: black;
+}
+
+.add-data--btn--div {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    top: -5%;
+
+    align-items: end;
+}
