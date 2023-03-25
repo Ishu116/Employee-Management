@@ -2,8 +2,8 @@
 ## Employee-Management
 Intern assignment
 ---
-
-#git clone<br>
+---
+#git clone <br>
 
 #For frontEnd<br>
 #cd frontend<br>
@@ -14,3 +14,4 @@ Intern assignment
 #cd backend<br>
 #npm install<br> 
 #node index.js<br>
+---
